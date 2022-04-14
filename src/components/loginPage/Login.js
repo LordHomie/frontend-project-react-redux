@@ -6,24 +6,27 @@ import Card from "../UI/Card/Card";
 import Button from "../UI/Button/Button";
 import Input from "../UI/Input/Input";
 
+import { validateEmail } from "../validationFunctions";
+import { validatePassword } from "../validationFunctions";
+
 import classes from "./Login.module.css";
 
 const emailReducer = (state, action) => {
   if (action.type === "USER_INPUT") {
-    return { value: action.val, isValid: action.val.includes("@") };
+    return { value: action.val, isValid: validateEmail(action.val) };
   }
   if (action.type === "INPUT_BLUR") {
-    return { value: state.value, isValid: state.value.includes("@") };
+    return { value: state.value, isValid: validateEmail(state.value) };
   }
   return { value: "", isValid: false };
 };
 
 const passwordReducer = (state, action) => {
   if (action.type === "USER_INPUT") {
-    return { value: action.val, isValid: action.val.trim().length > 6 };
+    return { value: action.val, isValid: validatePassword(action.val) };
   }
   if (action.type === "INPUT_BLUR") {
-    return { value: state.value, isValid: state.value.trim().length > 6 };
+    return { value: state.value, isValid: validatePassword(state.value) };
   }
   return { value: "", isValid: false };
 };

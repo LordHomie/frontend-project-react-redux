@@ -210,9 +210,13 @@ const List = () => {
     }
   };
 
-  const indexOfLastPost = currentPage * postsPerPage;
+  let indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+  if (posts.length < indexOfLastPost) {
+    indexOfLastPost = posts.length;
+  }
 
   const totalPages = Math.ceil(posts.length / postsPerPage);
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
@@ -243,6 +247,7 @@ const List = () => {
       setPosts={setPosts}
       postsArray={posts}
       employees={currentPosts}
+      defArr={JSON.parse(employees)}
     />
   );
 
@@ -264,7 +269,9 @@ const List = () => {
         tableComponent={tableComponent}
       />
       {posts.length !== 0 ? (
-        <p>{`Showing ${indexOfFirstPost} to ${indexOfLastPost} of ${posts.length} entries`}</p>
+        <p>{`Showing ${indexOfFirstPost + 1} to ${indexOfLastPost} of ${
+          posts.length
+        } entries`}</p>
       ) : (
         <span>No data found!</span>
       )}

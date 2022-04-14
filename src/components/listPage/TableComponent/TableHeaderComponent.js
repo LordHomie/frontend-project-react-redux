@@ -1,5 +1,3 @@
-import sortIcon from "../../../assets/sort_icon.png";
-
 const TableHeaderComponent = (props) => {
   return (
     <th className={props.className}>
@@ -7,9 +5,9 @@ const TableHeaderComponent = (props) => {
       <img
         onClick={props.onClick}
         style={{
-          cursor: props.cursor,
+          cursor: "pointer",
         }}
-        src={sortIcon}
+        src={props.sortIcon}
         alt={props.alt}
       />
     </th>

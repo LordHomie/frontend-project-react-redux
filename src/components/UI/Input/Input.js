@@ -4,6 +4,9 @@ import TooltipComponent from "../TooltipComponent";
 import classes from "./Input.module.css";
 
 const Input = (props) => {
+  const tooltipText =
+    "Minimum 8 characters, at least one letter and one number";
+
   return (
     <div
       className={`${classes.control} ${
@@ -13,7 +16,7 @@ const Input = (props) => {
       <label htmlFor={props.htmlFor}>
         {props.labelContent}
         {props.operation === "register" && (
-          <TooltipComponent passwordRules={"Password length must be > 6"}>
+          <TooltipComponent passwordRules={tooltipText}>
             <span className={classes["control__tooltip"]}>?</span>
           </TooltipComponent>
         )}
