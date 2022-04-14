@@ -1,0 +1,43 @@
+.register {
+  width: 40rem;
+  max-width: 70%;
+  margin: 2rem auto;
+  padding: 2rem;
+  margin-top: 4rem;
+  color: #03045e;
+}
+
+.register__heading {
+  text-align: center;
+  margin: 0 0 2rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #03045e;
+}
+
+.register__btn {
+  text-align: center;
+}
+
+.register__btn button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.register__login-link {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.register__login-link button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1.3rem;
+  color: inherit;
+}
+
+.register__form-error {
+  color: red;
+}

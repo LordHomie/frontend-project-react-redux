@@ -1,0 +1,52 @@
+.control {
+  margin: 1rem 0;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.control label,
+.control input {
+  display: block;
+}
+
+.control label {
+  font-weight: bold;
+  flex: 1;
+  color: #03045e;
+  margin-bottom: 0.5rem;
+}
+
+.control input {
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.control input:focus {
+  outline: none;
+  border-color: #03045e;
+  background: #ade8f4;
+}
+
+.control.invalid input {
+  border-color: red;
+  background: #fbdada;
+}
+
+.control__tooltip {
+  margin-left: 0.8rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 30px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .control {
+    align-items: center;
+    flex-direction: row;
+  }
+}

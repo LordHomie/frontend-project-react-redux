@@ -1,0 +1,9 @@
+.list-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-status__img {
+  width: 60%;
+}

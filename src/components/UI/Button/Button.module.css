@@ -1,0 +1,31 @@
+.btn {
+  align-self: flex-start;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  background-color: #00b4d8;
+  border: 1px solid #00b4d8;
+  color: white;
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  cursor: pointer;
+  outline: auto;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #03045e;
+  border-color: #03045e;
+  color: white;
+}
+
+button:disabled,
+button:focus:disabled,
+button:hover:disabled,
+button:active:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #666666;
+  cursor: not-allowed;
+}
