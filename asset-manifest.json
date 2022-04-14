@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/frontend-project-react-redux/static/css/main.2f339502.css",
-    "main.js": "/frontend-project-react-redux/static/js/main.77b1f915.js",
+    "main.js": "/frontend-project-react-redux/static/js/main.48afbe5d.js",
     "static/media/loading_spinner.gif": "/frontend-project-react-redux/static/media/loading_spinner.feb919b0d19eb692b391.gif",
     "static/media/error_icon.png": "/frontend-project-react-redux/static/media/error_icon.25ed5cbd8a89270dc81e.png",
     "index.html": "/frontend-project-react-redux/index.html",
     "main.2f339502.css.map": "/frontend-project-react-redux/static/css/main.2f339502.css.map",
-    "main.77b1f915.js.map": "/frontend-project-react-redux/static/js/main.77b1f915.js.map"
+    "main.48afbe5d.js.map": "/frontend-project-react-redux/static/js/main.48afbe5d.js.map"
   },
   "entrypoints": [
     "static/css/main.2f339502.css",
-    "static/js/main.77b1f915.js"
+    "static/js/main.48afbe5d.js"
   ]
 }
